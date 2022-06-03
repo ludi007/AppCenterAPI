@@ -13,8 +13,8 @@ using (HttpClient client = new HttpClient())
 	{
 		response.EnsureSuccessStatusCode();
 		var responseBody = await response.Content.ReadAsStringAsync();
-		var test = JsonConvert.DeserializeObject<List<Root>>(responseBody);
-		foreach (var bran in test)
+		var branches = JsonConvert.DeserializeObject<List<Root>>(responseBody);
+		foreach (var bran in branches)
 		{
 			Console.WriteLine("{0} build {1}.", bran.branch.name,bran.lastBuild.status);
 		}
