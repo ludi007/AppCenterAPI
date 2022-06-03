@@ -14,9 +14,9 @@ using (HttpClient client = new HttpClient())
 		response.EnsureSuccessStatusCode();
 		var responseBody = await response.Content.ReadAsStringAsync();
 		var branches = JsonConvert.DeserializeObject<List<Root>>(responseBody);
-		foreach (var bran in branches)
+		foreach (var branch in branches)
 		{
-			Console.WriteLine("{0} build {1}.", bran.branch.name,bran.lastBuild.status);
+			Console.WriteLine("{0} build {1}.", branch.branch.name,branch.lastBuild.status);
 		}
 
 	}
