@@ -45,7 +45,7 @@ using (HttpClient client = new HttpClient())
             } while (flag == 0);
             end = checkBuild.finishTime;
             seconds = end.Subtract(start);
-            Console.WriteLine("{0} build {1} in {2} seconds. Link to build logs {3}", build.sourceBranch, checkBuild.status, seconds.Seconds, "https://api.appcenter.ms/v0.1/apps/aleksandar_popov/Akvelon-home-task/builds/" + build.id + "/logs");
+            Console.WriteLine("{0} build {1} in {2} seconds. Link to build logs: {3}", build.sourceBranch, checkBuild.status, seconds.Seconds, "https://api.appcenter.ms/v0.1/apps/aleksandar_popov/Akvelon-home-task/builds/" + build.id + "/logs");
         }
 
     }
