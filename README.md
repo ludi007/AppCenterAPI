@@ -2,11 +2,14 @@
 
 ## Description
 
-C# console application that showes branches and their states that are created on AppCenter.
+C# console application that showe branches, their states, time of execution of the build and link to logs.
+First project called Akvelon_home_task is used for monitoring and to make new changes to the application,
+second project called AppCenterAPI is used to run all branches for first project and show name of branch, their state (completed/failed),
+ time for how much build lasted for that branch and link to logs for that branch.
 
 ## Getting Started
 First run project from first link in Installation part
-and afther that run other project form Installation part
+and after that run other project from Installation part.
 
 ### Dependencies
 
@@ -19,5 +22,3 @@ and afther that run other project form Installation part
 git clone https://github.com/ludi007/Akvelon_home_task.git
 git clone https://github.com/ludi007/AppCenterAPI.git
 ```
-### Missing features
-If i have more time i would devide calls in classes and added branch links, also added secrets to Key Vault.
